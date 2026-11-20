@@ -1347,7 +1347,7 @@
       <div class="in" id="show"></div>
     </div>
     <div class="cnt" id="cnt"></div>
-    <button class="btn" data-next>Next surprise ✦</button>
+    <button class="btn" data-next> click Next ✦</button>
   </section>
 
   <section class="stage" id="sp">
@@ -1357,7 +1357,7 @@
       <div class="pol"><img data-k="p01"></div>
       <div class="pol"><img data-k="p03"></div>
       <div class="pol"><img data-k="p13"></div>
-    </div><button class="btn" data-next>Next surprise ✦</button>
+    </div><button class="btn" data-next> click Next ✦</button>
   </section>
   <section class="stage" id="sb">
     <div class="tag">Elegance in every drape</div>
@@ -1366,7 +1366,7 @@
       <div class="pol"><img data-k="p05"></div>
       <div class="pol"><img data-k="p06"></div>
       <div class="pol"><img data-k="p04"></div>
-    </div><button class="btn" data-next>Next surprise ✦</button>
+    </div><button class="btn" data-next> click Next ✦</button>
   </section>
   <section class="stage" id="s3">
     <div class="tag">Wishes from the heart</div>
@@ -1413,7 +1413,7 @@
       <p>May 2026 bring you happiness, good health, success and endless reasons to smile. Keep shining, always.</p>
       <p class="script gold" style="font-size:38px">Happy Birthday Saraswathi ♡ 2026</p>
     </div>
-    <button class="btn" id="again">Replay surprise ↺</button>
+    <button class="btn" id="again">Return Home ↺</button>
   </section>
 
   <div id="lb"><button class="x">✕</button><button class="l">‹</button><img id="lbi"><button class="r">›</button></div>
@@ -1454,7 +1454,7 @@
     $('#dots').innerHTML = W.map(() => '<b></b>').join('');
     function wishes() { wi = 0; $('#nw').classList.remove('hide'); nw() }
     function nw() { const el = $('#wish'), t = W[wi]; el.textContent = '';[...$('#dots').children].forEach((d, k) => d.classList.toggle('on', k <= wi)); let k = 0; clearInterval(nw.t); nw.t = setInterval(() => { el.textContent = t.slice(0, ++k); if (k >= t.length) clearInterval(nw.t) }, 45) }
-    $('#nw').onclick = () => { if (wi < W.length - 1) { wi++; nw(); if (wi === W.length - 1) $('#nw').textContent = 'Next surprise ✦' } else { $('#nw').textContent = 'Next wish ♡'; go(cur + 1) } };
+    $('#nw').onclick = () => { if (wi < W.length - 1) { wi++; nw(); if (wi === W.length - 1) $('#nw').textContent = ' click Next  ✦' } else { $('#nw').textContent = 'Next wish ♡'; go(cur + 1) } };
     /* step 4 cake */
     $('#blow').onclick = () => { $('#cake').classList.add('out'); $('#blow').classList.add('hide'); $('#ct').textContent = 'Your wish will come true ✦'; burst(); setTimeout(() => burst(innerWidth * .3, innerHeight * .3, 100), 400); setTimeout(() => burst(innerWidth * .7, innerHeight * .3, 100), 800); $('#toall').classList.remove('hide') };
     /* step 5 gallery */
